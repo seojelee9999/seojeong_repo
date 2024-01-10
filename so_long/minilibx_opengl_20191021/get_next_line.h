@@ -16,12 +16,6 @@
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
 # endif
-# define KEY_RELEASE	3
-# define KEY_ESC		53
-# define KEY_W			13
-# define KEY_A			0
-# define KEY_S			1
-# define KEY_D			2
 
 char	*get_next_line(int fd);
 int		check_next_line(char *buffer);

@@ -5,7 +5,14 @@
 # include <stdlib.h>
 # include <fcntl.h>
 # include "get_next_line.h"
-//# include "mlx.h"
+# include "mlx.h"
+
+# define KEY_RELEASE	2
+# define KEY_ESC		53
+# define KEY_W			13
+# define KEY_A			0
+# define KEY_S			1
+# define KEY_D			2
 
 typedef struct s_img{
 	void	*wall;
@@ -57,4 +64,6 @@ void	move_w(t_data *data);
 void	move_a(t_data *data);
 void	move_s(t_data *data);
 void	move_d(t_data *data);
+void	ft_putchar(char n);
+void	ft_putnbr(int n);
 #endif

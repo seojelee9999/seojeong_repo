@@ -12,8 +12,8 @@ int	main(int ac, char **av)
 	init_map(fd, &data);
 	check_map(&data);
 	data.mlx = mlx_init();
-	data.win = mlx_new_window(data.mlx, data.map_h * 64, \
-	data.map_w * 64, "so_long");
+	data.win = mlx_new_window(data.mlx, data.map_w * 64, \
+	data.map_h * 64, "so_long");
 	set_img(&data);
 	draw_map(data);
 	mlx_hook(data.win, KEY_RELEASE, 0, &key_press, &data);

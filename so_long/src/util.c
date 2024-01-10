@@ -24,3 +24,21 @@ char	*ft_strdup(char *ch)
 	ft_strlcpy(tmp, ch, ft_strlen(ch) + 1);
 	return (tmp);
 }
+
+void	ft_putchar(char n)
+{
+	write(1, &n, 1);
+}
+
+void	ft_putnbr(int n)
+{
+	if (n >= 10)
+	{
+		ft_putnbr(n / 10);
+		n %= 10;
+	}
+	if (n < 10)
+	{
+		ft_putchar(n + '0');
+	}	
+}

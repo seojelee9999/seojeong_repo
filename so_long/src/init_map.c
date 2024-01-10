@@ -68,14 +68,14 @@ void	set_img(t_data *data)
 	int	width;
 	int	height;
 
-	data->img.wall = mlx_xpm_file_to_img \
+	data->img.wall = mlx_xpm_file_to_image \
 		(data->mlx, "./images/wall.xpm", &width, &height);
-	data->img.dol = mlx_xpm_file_to_img \
+	data->img.dol = mlx_xpm_file_to_image \
 		(data->mlx, "./images/dol.xpm", &width, &height);
-	data->img.street = mlx_xpm_file_to_img \
+	data->img.street = mlx_xpm_file_to_image \
 		(data->mlx, "./images/street.xpm", &width, &height);
-	data->img.exit = mlx_xpm_file_to_img \
+	data->img.exit = mlx_xpm_file_to_image \
 		(data->mlx, "./images/exit.xpm", &width, &height);
-	data->img.feed = mlx_xpm_file_to_img \
+	data->img.feed = mlx_xpm_file_to_image \
 		(data->mlx, "./images/feed.xpm", &width, &height);
 }
