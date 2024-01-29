@@ -14,14 +14,12 @@ void	move_w(t_data *data)
 	if (data->map[h - 1][w] == 'E')
 	{
 		if (data->c != 0)
-		{
-			write(1, "successs\n", 9);
 			return ;
-		}
 		data->cnt++;
 		write(1, "cnt :",5);
 		ft_putnbr(data->cnt);
 		write(1, "\n", 1);
+		write(1, "successs\n", 9);
 		terminate(data);
 	}
 	data->map[h][w] = '0';
@@ -45,14 +43,12 @@ void	move_s(t_data *data)
 	if (data->map[h + 1][w] == 'E')
 	{
 		if (data->c != 0)
-		{
-			write(1, "successs\n", 9);
 			return ;
-		}
 		data->cnt++;
 		write(1, "cnt :",5);
 		ft_putnbr(data->cnt);
 		write(1, "\n", 1);
+		write(1, "successs\n", 9);
 		terminate(data);
 	}
 	data->map[h][w] = '0';
@@ -76,14 +72,12 @@ void	move_a(t_data *data)
 	if (data->map[h][w - 1] == 'E')
 	{
 		if (data->c != 0)
-		{
-			write(1, "successs\n", 9);
 			return ;
-		}
 		data->cnt++;
 		write(1, "cnt :",5);
 		ft_putnbr(data->cnt);
 		write(1, "\n", 1);
+		write(1, "successs\n", 9);
 		terminate(data);
 	}
 	data->map[h][w] = '0';
@@ -107,14 +101,12 @@ void	move_d(t_data *data)
 	if (data->map[h][w + 1] == 'E')
 	{
 		if (data->c != 0)
-		{
-			write(1, "successs\n", 9);
 			return ;
-		}
 		data->cnt++;
 		write(1, "cnt :",5);
 		ft_putnbr(data->cnt);
 		write(1, "\n", 1);
+		write(1, "successs\n", 9);
 		terminate(data);
 	}
 	data->map[h][w] = '0';
