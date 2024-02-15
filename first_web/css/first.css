@@ -10,6 +10,8 @@ h1{
 	margin:0px;
 	padding:40px;
 	border-right:solid grey 1px;
+	border-left:solid grey 1px;
+	border-bottom:solid grey 1px;
 	width:170px;
 }
 .grid{
@@ -19,12 +21,16 @@ h1{
 .grid h2{
 	margin:0px;
 	padding:0px;
+	
 }
 body{
 	margin:0px;
+	
 }
 #content{
 	padding:25px;
+	border-bottom:solid grey 1px;
+	border-right:solid grey 1px;
 }
 #saw{
 	color:red;
@@ -34,6 +40,12 @@ body{
 		display:block;
 	}
 	.grid ol{
+		border-right:none;
+		border-left:none;
+		border-bottom:none;
+	}
+	#content{
+		border-bottom:none;
 		border-right:none;
 	}
 	h1{
