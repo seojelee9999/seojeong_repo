@@ -21,5 +21,28 @@
 				</p>
 			</div>
 		</div>
+		<input  type="button" value="night" onclick="
+		var target = document.querySelector('body');
+		var alist = document.querySelectorAll('a');
+		var i = 0;
+		if (this.value=='night'){
+			target.style.color='white';
+			target.style.backgroundColor='black';
+			this.value='day'
+			while (i < alist.length){
+				alist[i].style.color='aqua';
+				i+=1;
+			}
+		}
+		else{
+			target.style.color='black';
+			target.style.backgroundColor='white';
+			this.value='night'
+			while (i < alist.length){
+				alist[i].style.color='blue';
+				i+=1
+			}
+		}
+			">
 	</body>
 </html>
